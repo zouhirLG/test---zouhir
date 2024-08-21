@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Website Title</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    #ball {
+        width: 50px;
+        height: 50px;
+        background-color: #00040549;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        animation: fall 1.5s forwards, expand 0.8s forwards 1s;
+    }
+    @keyframes fall {
+        0% {
+            top: 0;
+        }
+        50% {
+            top: 50vh;
+        }
+        100% {
+            top: 50vh;
+        }
+    }
+    @keyframes expand {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(100);
+            opacity: 0;
+        }
+    }
+    /* Optional: Hide content until animation ends */
+    #content {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+</style>
+</head>
+<body>
+
+<!-- Animation Element -->
+<div id="ball"></div>
+
+<!-- Your Main Content -->
+<div id="content">
+    <!-- Your website content goes here -->
+</div>
+
+<script>
+    // Show content after animation
+    setTimeout(function() {
+        document.getElementById('content').style.opacity = '1';
+    }, 1800); // Match the animation duration
+</script>
+
+</body>
+</html>

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bemol music Agency</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="script.js">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <section class="container">
+            <div class="logo">
+                <img src="images/bemol-logo.png" alt="Bemol Logo">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#home" data-en="Home" data-ar="الصفحة الرئيسية">Home</a></li>
+                    <li><a href="#services" data-en="Services" data-ar="الخدمات">Services</a></li>
+                    <li><a href="#blog" data-en="blog" data-ar="اتصل بنا">blog</a></li>
+                    <li><a href="#about" data-en="About Us" data-ar="معلومات عنا">About Us</a></li>
+                    <li><a href="#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+                    <li><a href="music player/music player.html" data-en="music-player" data-ar="معلومات عنا">music-player</a></li>
+                    <li><a href="#community" data-en="Community" data-ar="المجتمع">Community</a></li> 
+                </ul>
+            </nav>
+
+            <div class="language-selector">
+                <select id="language-select" onchange="switchLanguage()">
+                    <option value="en">English</option>
+                    <option value="ar">Arabic</option>
+                </select>
+            </div>
+
+    </section>
+
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1 data-en="WELCOM TO BEMOL Music AGENCY" data-ar="">WELCOM TO<strong> BEMOL Music AGENCY</strong></h1>
+                <p data-en="Empowering Your Artistic Journey with Flexibility and Excellence."data-ar="انضم إلى مجتمعنا واستكشف خدمات مرنة بدون التزام مصممة للفنانين المستقلين والمحترفين في مجال الموسيقى في منطقة الشرق الأوسط وشمال إفريقيا.">Empowering Your Artistic Journey with Flexibility and Excellence.</p>
+                <div class="cta-buttons">
+                    <a href="services.html" class="btn" data-en="Explore Services" data-ar="استكشف الخدمات">Explore Services</a>
+                    <a href="community.html" class="btn btn-primary" data-en="Join Our Community" data-ar="انضم إلى مجتمعنا">Join Our Community</a>
+                </div>
+            </div>
+        </section>
+<div class="scroll-card">          
+     <marquee  behavior="scroll" direction="right">
+        <img src="images/pngegg.png" alt="Spotify">
+        <img src="images/pngegg (1).png" alt="Production">
+        <img src="images/pngegg.png" alt="Production">
+        <img src="images/pngegg (2).png" alt="Production">
+        <img src="images/pngegg.png" alt="Production">
+
+    </marquee>
+</div> 
+
+  <!-- Vision Section -->
+<section id="vision" class="vision">
+    <div class="container vision-cards">
+        <div class="vision-item">
+            <img src="https://placehold.co/600x400/000000/FFFFFF/png" alt="Vision Image" class="vision-img-left">
+            <div class="card">
+                <div class="background-text">Vision</div>
+                <h2>Our Vision</h2>
+                <h3>To democratize access to professional music services for independent artists and industry professionals, without any long-term engagements.</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mission Section -->
+<section id="mission" class="mission">
+    <div class="container mission-cards">
+        <div class="mission-item">
+            <div class="card">
+                <div class="background-text-2nd">Mission</div>
+                <h2>Our Mission</h2>
+                <h3>To offer a comprehensive menu of “À LA CARTE SERVICES”, providing unparalleled flexibility and freedom from engagements.</h3>
+            </div>
+            <img src="https://placehold.co/600x400/000000/FFFFFF/png" alt="Mission Image" class="mission-img-right">
+        </div>
+    </div>
+</section>
+
+<!-- Innovation Section -->
+<section id="innovation" class="innovation">
+    <div class="container innovation-cards">
+        <div class="innovation-item">
+            <img src="https://placehold.co/600x400/000000/FFFFFF/png" alt="Innovation Image" class="innovation-img-left">
+            <div class="card">
+                <div class="background-text">Innovation</div>
+                <h2 data="Our-Innovation" data-ar="">Our Innovation</h2>
+                <p data-en="We're pioneering a new approach to music industry services" data-ar="">We're pioneering a new approach to music industry services</p>
+                <ul>
+                    <li>No obligation for long-term contracts</li>
+                    <li>Personalized services for each artist</li>
+                    <li>Specialized focus on artists in the MENA region</li>
+                    <li>Building a vibrant community of music industry professionals</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2 data-en="Our Services" data-ar="خدماتنا">Our Services</h2>
+                <div class="service-cards">
+                    <div class="card">
+                        <img src="images/consulting-icon.png" alt="Consulting">
+                        <h3 data-en="Consulting" data-ar="الاستشارات">Consulting</h3>
+                        <p data-en="Get expert advice to navigate your music career." data-ar="احصل على نصائح من الخبراء لتوجيه مسيرتك الموسيقية.">Get expert advice to navigate your music career.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/artistic-direction.png" alt="Artistic Direction">
+                        <h3 data-en="Artistic Direction" data-ar="التوجيه الفني">Artistic Direction</h3>
+                        <p data-en="Enhance your artistic vision with professional guidance." data-ar="عزز رؤيتك الفنية بإرشادات مهنية.">Enhance your artistic vision with professional guidance.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/legal-icon.png" alt="Legal Advice">
+                        <h3 data-en="Legal Advice" data-ar="النصيحة القانونية">Legal Advice</h3>
+                        <p data-en="Protect your work with expert legal counsel." data-ar="احمِ عملك بنصيحة قانونية من الخبراء.">Protect your work with expert legal counsel.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/production-icon.png" alt="Production">
+                        <h3 data-en="Production" data-ar="الإنتاج">Production</h3>
+                        <p data-en="From recording to mixing and mastering, we cover all your production needs." data-ar="من التسجيل إلى المزج والإتقان، نحن نوفر جميع احتياجاتك الإنتاجية.">From recording to mixing and mastering, we cover all your production needs.</p>
+                        <div class="serv-buttons">
+                            <a href="services.html" class="btn" data-en="Explore more Services" data-ar="استكشف الخدمات">Explore Services</a>
+                    </div>
+                </div>
+                    </div>
+            </div>
+        </section>
+        
+<section class="info-section">
+    <div class="info-card">
+        <h2>WHY CHOOSE US</h2>
+        <p><strong>Flexibility:</strong> Our à la carte services mean you only pay for what you need.</p>
+        <p><strong>No Long-Term Commitments:</strong> We believe in earning your business every day, not locking you into long-term contracts.</p>
+        <p><strong>MENA Region Expertise:</strong> We understand the unique landscape of the Middle East and North Africa music scene.</p>
+        <p><strong>Personalized Experience:</strong> Ensures a tailored experience for your specific needs.</p>
+        <p><strong>Comprehensive Services:</strong> From legal advice to vinyl pressing, we've got all aspects of your music career covered.</p>
+        <p><strong>Community-Focused:</strong> Join a thriving network of artists and industry professionals.</p>
+    </div>
+</section>
+
+
+
+<section class="upcoming-events">
+    <h2>Upcoming Events</h2>
+    <div class="event-list">
+        <div class="event-item">
+            <img src="images/fest.jpg" alt="Summer Music Festival">
+            <h3>Summer Music Festival</h3>
+            <p><strong>Date:</strong> August 15, 2024</p>
+            <p><strong>Location:</strong> Central Park, NYC</p>
+            <p>Join us for an exciting day filled with live music performances from top artists. Don’t miss out on this summer's biggest music event!</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+        
+        <div class="event-item">
+            <img src="images/networking.jpg" alt="Music Industry Networking Night">
+            <h3>Music Industry Networking Night</h3>
+            <p><strong>Date:</strong> September 10, 2024</p>
+            <p><strong>Location:</strong> Downtown Conference Center</p>
+            <p>Network with industry professionals, artists, and influencers. A great opportunity to make valuable connections and discuss industry trends.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+        
+        <div class="event-item">
+            <img src="images/recording.jpg" alt="Live Recording Workshop">
+            <h3>Live Recording Workshop</h3>
+            <p><strong>Date:</strong> October 5, 2024</p>
+            <p><strong>Location:</strong> Creative Studio, LA</p>
+            <p>Learn the ins and outs of live recording from experts. Perfect for musicians and producers looking to enhance their recording skills.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+    </div>
+</section>
+
+                </div>
+            </div>
+        </section>
+        
+
+<section class="about">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>BEMOL MUSIC AGENCY was born from a passion for independent music and a desire to transform the industry. We understand the unique challenges faced by independent artists, especially in the MENA region. Our team of industry experts is committed to providing top-tier services without the need for exclusive contracts or long-term commitments.</p>
+        <div class="team">
+            <div class="team-card">
+                <img src="images/3.jpg" alt="Team Member">
+                <div class="team-card-text">othman najmedeen
+                    <p>CEO & Founder</p>
+                </div>
+                <div class="team-card-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="team-card">
+                <img src="images/1.jpg" alt="Team Member">
+                <h3>mehdi azdim</h3>
+                <p>Head of Production</p>
+                <div class="team-card-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="team-card">
+                <img src="images/2.jpg" alt="Team Member">
+                <h3>Team Member 3</h3>
+                <p>Marketing Director</p>
+                <div class="team-card-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="team-card">
+                <img src="images/4.jpg" alt="Team Member">
+                <h3>mehdi azdim</h3>
+                <p>Head of Production</p>
+                <div class="team-card-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="team-card">
+                <img src="images/5.jpg" alt="Team Member">
+                <div class="team-card-text">othman najmedeen
+                    <p>CEO & Founder</p>
+                </div>
+                <div class="team-card-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        </section>
+    
+	        <!-- Blog Section -->
+        <section id="blog" class="blog">
+            <div class="container">
+                <h2 data-en="Latest Blog Posts" data-ar="أحدث المدونات">Latest Blog Posts</h2>
+                <div class="blog-posts">
+                    <article>
+                        <img src="images/blog1.jpg" alt="Blog Post 1">
+                        <h3 data-en="The Future of Music Industry Services" data-ar="مستقبل خدمات صناعة الموسيقى">The Future of Music Industry Services</h3>
+                        <p data-en="Discover the trends shaping the future of music services." data-ar="اكتشف الاتجاهات التي تشكل مستقبل خدمات الموسيقى.">Discover the trends shaping the future of music services.</p>
+                        <a href="blog-post1.html" class="btn" data-en="Read More" data-ar="اقرأ المزيد">Read More</a>
+                    </article>
+                    <article>
+                        <img src="images/blog2.jpg" alt="Blog Post 2">
+                        <h3 data-en="How to Navigate a Music Career" data-ar="كيف تنجح في مسيرتك الموسيقية">How to Navigate a Music Career</h3>
+                        <p data-en="Tips and tricks for managing your career in music." data-ar="نصائح وحيل لإدارة مسيرتك في الموسيقى.">Tips and tricks for managing your career in music.</p>
+                        <a href="blog-post2.html" class="btn" data-en="Read More" data-ar="اقرأ المزيد">Read More</a>
+                    </article>
+                    <article>
+                        <img src="images/blog3.jpg" alt="Blog Post 3">
+                        <h3 data-en="Understanding Music Production" data-ar="فهم إنتاج الموسيقى">Understanding Music Production</h3>
+                        <p data-en="An in-depth look at the music production process." data-ar="نظرة عميقة على عملية إنتاج الموسيقى.">An in-depth look at the music production process.</p>
+                        <a href="blog-post3.html" class="btn" data-en="Read More" data-ar="اقرأ المزيد">Read More</a>
+                    </article>
+                    <article>
+                        <img src="images/blog4.jpg" alt="Blog Post 4">
+                        <h3 data-en="The Impact of Digital Media on Music" data-ar="أثر وسائل الإعلام الرقمية على الموسيقى">The Impact of Digital Media on Music</h3>
+                        <p data-en="How digital media is changing the music industry landscape." data-ar="كيف تغير وسائل الإعلام الرقمية مشهد صناعة الموسيقى.">How digital media is changing the music industry landscape.</p>
+                        <a href="blog-post4.html" class="btn" data-en="Read More" data-ar="اقرأ المزيد">Read More</a>
+                    </article>
+                    <article>
+                        <img src="images/blog5.jpg" alt="Blog Post 5">
+                        <h3 data-en="Collaborating with Other Artists" data-ar="التعاون مع الفنانين الآخرين">Collaborating with Other Artists</h3>
+                        <p data-en="The benefits and challenges of collaborating in the music industry." data-ar="فوائد وتحديات التعاون في صناعة الموسيقى.">The benefits and challenges of collaborating in the music industry.</p>
+                        <a href="blog-post5.html" class="btn" data-en="Read More" data-ar="اقرأ المزيد">Read More</a>
+                    </article>
+                    <article>
+                        <img src="images/blog6.jpg" alt="Blog Post 6">
+                        <h3 data-en="Marketing Your Music Effectively" data-ar="تسويق موسيقاك بفعالية">Marketing Your Music Effectively</h3>
+                        <p data-en="Strategies for promoting your music to a wider audience." data-ar="استراتيجيات للترويج لموسيقاك لجمهور أوسع.">Strategies for promoting your music to a wider audience.</p>
+                        <a href="blog-post6.html" class="btn" data-en="Read More" data-ar="اقرأ المزيد">Read More</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+  
+        <section >
+      <!-- Testimonials Section -->
+<!-- Testimonials Section -->
+<section class="carousel" aria-label="Testimonials">
+  <h2>Testimonial</h2>
+  <ol class="carousel__viewport">
+    <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+      <div class="carousel__snapper">
+        <div class="card">
+          <div class="review-item">
+            &#9733;&#9733;&#9733;&#9733;&#9733;
+            <blockquote>
+              <p>"The team at Bemol Agency was instrumental in helping us launch our new album. Their expertise and dedication made the entire process smooth and successful. Highly recommend!"</p>
+            </blockquote>
+            <p><strong>- Anass, Musician</strong></p>
+          </div>
+        </div>
+        <a href="#carousel__slide3" class="carousel__prev">Go to last slide</a>
+        <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+      </div>
+    </li>
+    <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+      <div class="carousel__snapper">
+        <div class="card">
+          <div class="review-item">
+            &#9733;&#9733;&#9733;&#9733;&#9733;
+            <blockquote>
+              <p>"Exceptional service and support! The marketing strategies they provided significantly boosted our band's visibility and fan engagement. Thanks for everything!"</p>
+            </blockquote>
+            <p><strong>- Sarah, Band Manager</strong></p>
+          </div>
+        </div>
+        <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+        <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+      </div>
+    </li>
+    <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+      <div class="carousel__snapper">
+        <div class="card">
+          <div class="review-item">
+            &#9733;&#9733;&#9733;&#9733;&#9733;
+            <blockquote>
+              <p>"The legal advice from Bemol Agency was top-notch. They helped us navigate complex contracts with ease. We couldn't have done it without their guidance."</p>
+            </blockquote>
+            <p><strong>- Ahmed, Producer</strong></p>
+          </div>
+        </div>
+        <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+        <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+      </div>
+    </li>
+  </ol>
+  <aside class="carousel__navigation">
+    <ol class="carousel__navigation-list">
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+      </li>
+    </ol>
+  </aside>
+</section>
+
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 data-en="Contact Us" data-ar="اتصل بنا">Contact Us</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name" data-en="Name" data-ar="الاسم">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-en="Email" data-ar="البريد الإلكتروني">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-en="Message" data-ar="الرسالة">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn" data-en="Send Message" data-ar="إرسال الرسالة">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="community" class="community">
+            <div class="container">
+                <h2 data-en="Join Our Community" data-ar="انضم إلى مجتمعنا">Join Our Community</h2>
+                <p data-en="Be part of our vibrant Discord community. Connect with other artists, share your work, and get the support you need." data-ar="كن جزءًا من مجتمعنا النابض بالحياة على ديسكورد. تواصل مع فنانين آخرين، وشارك عملك، واحصل على الدعم الذي تحتاجه.">Be part of our vibrant Discord community. Connect with other artists, share your work, and get the support you need.</p>
+                <a href="https://discord.gg/bemol" class="btn btn-primary" data-en="Join on Discord" data-ar="انضم على ديسكورد">Join on Discord</a>
+                <div class="social-media">
+                    <a href="https://www.tiktok.com/bemol" class="social-icon" data-en="TikTok" data-ar="تيك توك">TikTok</a>
+                    <a href="https://www.instagram.com/bemol" class="social-icon" data-en="Instagram" data-ar="إنستغرام">Instagram</a>
+                </div>
+            </div>
+        </section>
+</main>
+
+    <footer>
+        <section class="container">
+            <div class="footer-links">
+                <a href="#home" data-en="Home" data-ar="الصفحة الرئيسية">Home</a>
+                <a href="#services" data-en="Services" data-ar="الخدمات">Services</a>
+                <a href="#about" data-en="About Us" data-ar="معلومات عنا">About Us</a>
+                <a href="#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+                <a href="#community" data-en="Community" data-ar="المجتمع">Community</a>
+
+            </div>
+ <section>
+    <footer>
+        <div class="footer-info">
+            <p data-en="&copy; 2024 Bemol Agency. All rights reserved." data-ar="© 2024 وكالة بيمول. جميع الحقوق محفوظة.">&copy; 2024 Bemol Agency. All rights reserved.</p>
+            <p><a href="#" data-en="Privacy Policy" data-ar="سياسة الخصوصية">Privacy Policy</a> | <a href="#" data-en="Terms of Service" data-ar="شروط الخدمة">Terms of Service</a></p>
+        </div>
+        <div class="footer-contact">
+            <p>Email: <a href="mailto:info@bemolagency.com">info@bemolagency.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 234-567-890</a></p>
+            <p>Address 1:Casablanca, Morocco,</p>
+            <p>Address 2: Haïfa, Palestine </p>
+
+        </div>
+    </footer>
+</section>
+
+    <script>
+
+        // Language switcher
+        function switchLanguage() {
+            const lang = document.getElementById('language-select').value;
+            document.querySelectorAll('[data-en]').forEach(el => {
+                el.innerText = el.getAttribute(`data-${lang}`);
+            });
+        }
+    </script>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles2.css">
+    </head>
+    <body>
+        <div class="music-player">
+            <div class="track-info">
+                <div id="track-title">JOURNEY</div>
+                <div id="track-artist">liax feat dexter & tga</div>
+            </div>
+            <input type="range" id="progress-bar" value="0" step="1" />
+			 <div class="timer">
+                <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+            </div>
+            <div class="player-controls">
+                <button id="prev">⏮</button>
+                <button id="shuffle">🔀</button>
+                <button id="loop">🔁</button>
+                <button id="playpause">▶️</button>
+                <button id="next">⏭</button>
+            </div>
+            <div class="volume-control">
+                <label for="volume">Volume:</label>
+                <input type="range" id="volume" value="100" step="1" />
+            </div>
+           
+            <audio id="audio-player" src="songs/JOURNEY.mp3"></audio>
+        </div>
+        <script src="script2.js"></script>
+    </body>
+    </html>
+    
+</body>
+</html>
