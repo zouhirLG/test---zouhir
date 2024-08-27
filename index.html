@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="script.js">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 
 </head>
 <body>
@@ -37,6 +38,28 @@
                     <option value="ar">Arabic</option>
                 </select>
             </div>
+    <button id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </header>
+
+
+  <nav id="sidebar">
+    <ul>
+                    <li><a href="#home" data-en="Home" data-ar="الصفحة الرئيسية">Home</a></li>
+                    <li><a href="#services" data-en="Services" data-ar="الخدمات">Services</a></li>
+                    <li><a href="#blog" data-en="blog" data-ar="اتصل بنا">blog</a></li>
+                    <li><a href="#about" data-en="About Us" data-ar="معلومات عنا">About Us</a></li>
+                    <li><a href="#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
+                    <li><a href="music player/music player.html" data-en="music-player" data-ar="معلومات عنا">music-player</a></li>
+                    <li><a href="#community" data-en="Community" data-ar="المجتمع">Community</a></li> 
+    </ul>
+    <div class="language-selector">
+      <select>
+        <option value="en">English</option>
+        <option value="ar">arabic</option>
+      </select>
+    </div>
+  </nav>
 
     </section>
 
@@ -45,7 +68,7 @@
     <main>
         <section id="home" class="hero">
             <div class="container">
-                <h1 data-en="WELCOM TO BEMOL Music AGENCY" data-ar="">WELCOM TO<strong> BEMOL Music AGENCY</strong></h1>
+                <h1 data-en="WELCOM TO BEMOL Music AGENCY" data-ar="">WELCOM TO<span style="color:blue;font-weight:bold"> BEMOL Music AGENCY</span></h1>
                 <p data-en="Empowering Your Artistic Journey with Flexibility and Excellence."data-ar="انضم إلى مجتمعنا واستكشف خدمات مرنة بدون التزام مصممة للفنانين المستقلين والمحترفين في مجال الموسيقى في منطقة الشرق الأوسط وشمال إفريقيا.">Empowering Your Artistic Journey with Flexibility and Excellence.</p>
                 <div class="cta-buttons">
                     <a href="services.html" class="btn" data-en="Explore Services" data-ar="استكشف الخدمات">Explore Services</a>
@@ -70,9 +93,8 @@
         <div class="vision-item">
             <img src="https://placehold.co/600x400/000000/FFFFFF/png" alt="Vision Image" class="vision-img-left">
             <div class="card">
-                <div class="background-text">Vision</div>
-                <h2>Our Vision</h2>
-                <h3>To democratize access to professional music services for independent artists and industry professionals, without any long-term engagements.</h3>
+                <h2 data-en="" data-ar="رؤيتنا">Our Vision</h2>
+                <h3 data-en="" data-ar="تمكين المشتغلين بالصناعات الموسيقية من الوصول بطريقة ديمقراطية و سلسة  إلى الخدمات المهنية للفنانين المستقلين والمهنيين  بدون عقود حصرية  أو إلتزامات طويلة الأمد">To democratize access to professional music services for independent artists and industry professionals, without any long-term engagements.</h3>
             </div>
         </div>
     </div>
@@ -83,13 +105,12 @@
     <div class="container mission-cards">
         <div class="mission-item">
             <div class="card">
-                <div class="background-text-2nd">Mission</div>
-                <h2>Our Mission</h2>
-                <h3>To offer a comprehensive menu of “À LA CARTE SERVICES”, providing unparalleled flexibility and freedom from engagements.</h3>
+                <h2 data-en="OUR MISSION" data-ar="مهمتنا"> Our Mission</h2>
+                <h3 data-en= "To offer a comprehensive menu of “À LA CARTE SERVICES”, providing unparalleled flexibility and freedom from engagements." data-ar="تقديم قائمة شاملة من الخدمات حسب الطلب، مما يوفر مرونة وحرية اختيار الخدمات المناسبة"> To offer a comprehensive menu of “À LA CARTE SERVICES”, providing unparalleled flexibility and freedom from engagements.</h3>
             </div>
             <img src="https://placehold.co/600x400/000000/FFFFFF/png" alt="Mission Image" class="mission-img-right">
         </div>
-    </div>
+    </div> 
 </section>
 
 <!-- Innovation Section -->
@@ -98,14 +119,13 @@
         <div class="innovation-item">
             <img src="https://placehold.co/600x400/000000/FFFFFF/png" alt="Innovation Image" class="innovation-img-left">
             <div class="card">
-                <div class="background-text">Innovation</div>
-                <h2 data="Our-Innovation" data-ar="">Our Innovation</h2>
+                <h2 data-en="Our-Innovation" data-ar="خدماتنا المبتكرة">Our Innovation</h2>
                 <p data-en="We're pioneering a new approach to music industry services" data-ar="">We're pioneering a new approach to music industry services</p>
                 <ul>
-                    <li>No obligation for long-term contracts</li>
-                    <li>Personalized services for each artist</li>
-                    <li>Specialized focus on artists in the MENA region</li>
-                    <li>Building a vibrant community of music industry professionals</li>
+                    <li data-en="" data-ar=" بدون عقود حصرية  أو إلتزامات طويلة الأمد">No obligation for long-term contracts</li>
+                    <li data-en="" data-ar="طريقة مبتكرة جديدة لخدمات صناعة الموسيق">Personalized services for each artist</li>
+                   <li data-en="" data-ar="تركيز متخصص على الفنانين في منطقة الشرق الأوسط وشمال أفريقيا">Specialized focus on artists in the MENA region</li>
+                   <li data-en="" data-ar="التركيز على بناء مجتمع بناء من المهنيين في صناعة الموسيقى مجتمع على إتصال دائم">Building a vibrant community of music industry professionals</li>
                 </ul>
             </div>
         </div>
@@ -115,6 +135,7 @@
         <section id="services" class="services">
             <div class="container">
                 <h2 data-en="Our Services" data-ar="خدماتنا">Our Services</h2>
+			<p data-en="At BEMOL, we offer a wide range of services à la carte. Choose what you need, when you need it" data-ar="في بيمول، نقدم مجموعة واسعة من الخدمات حسب الطلب. اختر ما تحتاجه، عندما تحتاج إليه">At BEMOL, we offer a wide range of services à la carte. Choose what you need, when you need it</p>
                 <div class="service-cards">
                     <div class="card">
                         <img src="images/consulting-icon.png" alt="Consulting">
@@ -145,21 +166,21 @@
         
 <section class="info-section">
     <div class="info-card">
-        <h2>WHY CHOOSE US</h2>
-        <p><strong>Flexibility:</strong> Our à la carte services mean you only pay for what you need.</p>
-        <p><strong>No Long-Term Commitments:</strong> We believe in earning your business every day, not locking you into long-term contracts.</p>
-        <p><strong>MENA Region Expertise:</strong> We understand the unique landscape of the Middle East and North Africa music scene.</p>
-        <p><strong>Personalized Experience:</strong> Ensures a tailored experience for your specific needs.</p>
-        <p><strong>Comprehensive Services:</strong> From legal advice to vinyl pressing, we've got all aspects of your music career covered.</p>
-        <p><strong>Community-Focused:</strong> Join a thriving network of artists and industry professionals.</p>
+        <h2 data-en="" data-ar="<strong><strong>">WHY CHOOSE US</h2>
+        <p data-en="" data-ar="<strong><strong>"><strong>Flexibility:</strong> Our à la carte services mean you only pay for what you need.</p>
+        <p data-en="" data-ar="<strong><strong>"><strong>No Long-Term Commitments:</strong> We believe in earning your business every day, not locking you into long-term contracts.</p>
+        <p data-en="" data-ar=<strong><strong>""><strong>MENA Region Expertise:</strong> We understand the unique landscape of the Middle East and North Africa music scene.</p>
+        <p data-en="" data-ar="<strong><strong>"><strong>Personalized Experience:</strong> Ensures a tailored experience for your specific needs.</p>
+        <p data-en="" data-ar="<strong><strong>"><strong>Comprehensive Services:</strong> From legal advice to vinyl pressing, we've got all aspects of your music career covered.</p>
+        <p data-en="" data-ar=<strong>"<strong><strong>"><strong>Community-Focused:</strong> Join a thriving network of artists and industry professionals.</p>
     </div>
 </section>
 
 
 
 <section class="upcoming-events">
-    <h2>Upcoming Events</h2>
     <div class="event-list">
+	<h3>upcoming eventS</H3>
         <div class="event-item">
             <img src="images/fest.jpg" alt="Summer Music Festival">
             <h3>Summer Music Festival</h3>
@@ -186,13 +207,15 @@
             <p>Learn the ins and outs of live recording from experts. Perfect for musicians and producers looking to enhance their recording skills.</p>
             <a href="#" class="btn btn-primary">Learn More</a>
         </div>
+
     </div>
 </section>
-
-                </div>
-            </div>
-        </section>
-        
+    <div class="background">
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
 
 <section class="about">
     <div class="container">
@@ -263,37 +286,37 @@
                 <h2 data-en="Latest Blog Posts" data-ar="أحدث المدونات">Latest Blog Posts</h2>
                 <div class="blog-posts">
                     <article>
-                        <img src="images/blog1.jpg" alt="Blog Post 1">
+                        <img src="https://placehold.co/600x400/000000/FFFFFF/png" alt="Blog Post 1">
                         <h3 data-en="The Future of Music Industry Services" data-ar="مستقبل خدمات صناعة الموسيقى">The Future of Music Industry Services</h3>
                         <p data-en="Discover the trends shaping the future of music services." data-ar="اكتشف الاتجاهات التي تشكل مستقبل خدمات الموسيقى.">Discover the trends shaping the future of music services.</p>
                         <a href="blog-post1.html" class="btn" data-en="Read More" data-ar="اقرأ المزيد">Read More</a>
                     </article>
                     <article>
-                        <img src="images/blog2.jpg" alt="Blog Post 2">
+                        <img src="https://placehold.co/600x400/000000/FFFFFF/png" alt="Blog Post 2">
                         <h3 data-en="How to Navigate a Music Career" data-ar="كيف تنجح في مسيرتك الموسيقية">How to Navigate a Music Career</h3>
                         <p data-en="Tips and tricks for managing your career in music." data-ar="نصائح وحيل لإدارة مسيرتك في الموسيقى.">Tips and tricks for managing your career in music.</p>
                         <a href="blog-post2.html" class="btn" data-en="Read More" data-ar="اقرأ المزيد">Read More</a>
                     </article>
                     <article>
-                        <img src="images/blog3.jpg" alt="Blog Post 3">
+                        <img src="https://placehold.co/600x400/000000/FFFFFF/png" alt="Blog Post 3">
                         <h3 data-en="Understanding Music Production" data-ar="فهم إنتاج الموسيقى">Understanding Music Production</h3>
                         <p data-en="An in-depth look at the music production process." data-ar="نظرة عميقة على عملية إنتاج الموسيقى.">An in-depth look at the music production process.</p>
                         <a href="blog-post3.html" class="btn" data-en="Read More" data-ar="اقرأ المزيد">Read More</a>
                     </article>
                     <article>
-                        <img src="images/blog4.jpg" alt="Blog Post 4">
+                        <img src="https://placehold.co/600x400/000000/FFFFFF/png" alt="Blog Post 4">
                         <h3 data-en="The Impact of Digital Media on Music" data-ar="أثر وسائل الإعلام الرقمية على الموسيقى">The Impact of Digital Media on Music</h3>
                         <p data-en="How digital media is changing the music industry landscape." data-ar="كيف تغير وسائل الإعلام الرقمية مشهد صناعة الموسيقى.">How digital media is changing the music industry landscape.</p>
                         <a href="blog-post4.html" class="btn" data-en="Read More" data-ar="اقرأ المزيد">Read More</a>
                     </article>
                     <article>
-                        <img src="images/blog5.jpg" alt="Blog Post 5">
+                        <img src="https://placehold.co/600x400/000000/FFFFFF/png" alt="Blog Post 5">
                         <h3 data-en="Collaborating with Other Artists" data-ar="التعاون مع الفنانين الآخرين">Collaborating with Other Artists</h3>
                         <p data-en="The benefits and challenges of collaborating in the music industry." data-ar="فوائد وتحديات التعاون في صناعة الموسيقى.">The benefits and challenges of collaborating in the music industry.</p>
                         <a href="blog-post5.html" class="btn" data-en="Read More" data-ar="اقرأ المزيد">Read More</a>
                     </article>
                     <article>
-                        <img src="images/blog6.jpg" alt="Blog Post 6">
+                        <img src="https://placehold.co/600x400/000000/FFFFFF/png" alt="Blog Post 6">
                         <h3 data-en="Marketing Your Music Effectively" data-ar="تسويق موسيقاك بفعالية">Marketing Your Music Effectively</h3>
                         <p data-en="Strategies for promoting your music to a wider audience." data-ar="استراتيجيات للترويج لموسيقاك لجمهور أوسع.">Strategies for promoting your music to a wider audience.</p>
                         <a href="blog-post6.html" class="btn" data-en="Read More" data-ar="اقرأ المزيد">Read More</a>
@@ -305,7 +328,6 @@
   
         <section >
       <!-- Testimonials Section -->
-<!-- Testimonials Section -->
 <section class="carousel" aria-label="Testimonials">
   <h2>Testimonial</h2>
   <ol class="carousel__viewport">
@@ -320,8 +342,8 @@
             <p><strong>- Anass, Musician</strong></p>
           </div>
         </div>
-        <a href="#carousel__slide3" class="carousel__prev">Go to last slide</a>
-        <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+        <a href="#carousel__slide3" class="carousel__prev">--</a>
+        <a href="#carousel__slide2" class="carousel__next">+</a>
       </div>
     </li>
     <li id="carousel__slide2" tabindex="0" class="carousel__slide">
@@ -335,8 +357,8 @@
             <p><strong>- Sarah, Band Manager</strong></p>
           </div>
         </div>
-        <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
-        <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+        <a href="#carousel__slide1" class="carousel__prev">-</a>
+        <a href="#carousel__slide3" class="carousel__next">+</a>
       </div>
     </li>
     <li id="carousel__slide3" tabindex="0" class="carousel__slide">
@@ -350,24 +372,10 @@
             <p><strong>- Ahmed, Producer</strong></p>
           </div>
         </div>
-        <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
-        <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+        <a href="#carousel__slide2" class="carousel__prev">-</a>
+        <a href="#carousel__slide1" class="carousel__next">+</a>
       </div>
     </li>
-  </ol>
-  <aside class="carousel__navigation">
-    <ol class="carousel__navigation-list">
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
-      </li>
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
-      </li>
-      <li class="carousel__navigation-item">
-        <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
-      </li>
-    </ol>
-  </aside>
 </section>
 
 
@@ -440,6 +448,14 @@
                 el.innerText = el.getAttribute(`data-${lang}`);
             });
         }
+
+  document.getElementById('menu-toggle').addEventListener('click', function() {
+    var sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('active'); // Toggle the 'active' class
+  });
+
+</script>
+
     </script>
 
     <head>
