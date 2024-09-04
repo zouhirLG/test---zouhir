@@ -1,24 +1,28 @@
-body, h1, h2, h3, p, ul, li, form, input, textarea {
+.{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 @media  only screen and (min-width:1024px)
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+ 
+.body {
+    font-family: 'noto sans', sans-serif
     line-height: 1.6;
-    color: var(--text-color);
+     background: transparent;
+     position: relative;
 
+        }
 
-}
 
 .container {
-    width: 90%;
+    width: 95%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0px;
 }
+
+
 
 /* General Header Styles */
 header {
@@ -38,7 +42,7 @@ header .container {
 }
 
 header .logo img {
-  max-height: 50px;
+  max-height: 7vw;
   background: transparent;
 }
 
@@ -190,9 +194,9 @@ header nav ul li a:hover {
 /* Hero Section */
 .hero {
   background: url('images/hero-bg.jpg') no-repeat center center/cover;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'noto sans', sans-serif;
   color: #f7f7f7;
-  text-align: right;
+  text-align: left;
   padding: 7.5dvw;
   position: relative;
 }
@@ -205,17 +209,17 @@ header nav ul li a:hover {
   width: 100%;
   height: 30%;
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1));
-  z-index: 0;
+  z-index: 20;
 }
 
 .hero h1, .hero p {
-  font-size: 6vw;
+  font-size: 3vw;
   margin-bottom: 20px;
   text-align: left;
   max-inline-size: 41vw;
   writing-mode: horizontal-tb;
   position: relative;
-  z-index: 2;
+  z-index: 22;
 }
 
 
@@ -232,7 +236,7 @@ header nav ul li a:hover {
   align-items: flex-end;
   gap: 10px;
   position: relative;
-  z-index: 2;
+  z-index: 22;
 }
 
 .cta-buttons .btn {
@@ -254,34 +258,23 @@ header nav ul li a:hover {
 }
 
 
-/* Scroll Card Section */
-.scroll-card {
-    background-color: transparent;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-    flex: 1 1 250px;
-    margin: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;	
-}
-
-.scroll-card img {
-    max-width: 60px;
-    margin-bottom: 20px;
-}
-
 /* Vision Section */
 .vision {
-    background-color: #f1f1f1;
+    background-color:  transparent;
     padding: 50px 0;
-}
+		z-index:22
+
+	}
 
 .vision h2 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 40px;
-    color: var(--text-color);
+    color: #000;
+}
+.vision h3 {
+    text-align: left;
+    margin-bottom: 10px;
+    color: #000;
 }
 
 .vision-cards {
@@ -298,6 +291,7 @@ header nav ul li a:hover {
     max-width: 100%; 
     box-sizing: border-box;
 	overflow:hidden;
+    z-index: 30;
 
 }
 
@@ -305,7 +299,7 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 150px; 
+    width: 100%; 
     height: auto;
     margin-right: 20px;
 	
@@ -313,14 +307,19 @@ header nav ul li a:hover {
 
 /* Mission Section */
 .mission {
-    background-color: #f1f1f1;
+    background-color: transparent;
     padding: 50px 0;
 }
 
 .mission h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    color: var(--text-color);
+    text-align:left;
+    margin-bottom: 10px;
+    color: #000;
+}
+.mission h3 {
+    text-align: left;
+    margin-bottom: 10px;
+    color: #000;
 }
 
 .mission-cards {
@@ -349,12 +348,18 @@ header nav ul li a:hover {
 
 }
 
-/* Innovation Section */
+/* vation Section */
 .innovation {
-    background-color: #f1f1f1;
+    background-color: transparent;
     padding: 50px 0;
 }
 
+.innovation h2 {
+	font-size: 40px;
+    text-align:left;
+	margin-left: 11%;
+
+}
 .innovation-cards {
     display: flex;
     flex-wrap: wrap;
@@ -407,37 +412,37 @@ header nav ul li a:hover {
 
 .card {
     position: relative;
-    z-index: 0;
+    z-index: 10;
     text-align: left;
     max-width: 600px;
     margin: auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(42, 42, 42, 0.223);
     border-radius: 10px;
     backdrop-filter: blur(10px);
 }
 
 .card h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'noto sans', sans-serif;
     font-weight: 700;
     font-size: 2.5rem;
     margin: 0 0 1rem 0;
     text-transform: uppercase;
-    color: var(--text-color);
+    color: #000;
 }
 
 .card h3 {
     font-weight: 600;
     font-size: 1.25rem;
     line-height: 1.6;
-    color: var(--text-color);
+    color: #000;
 }
 
 .card p {
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.6;
-    color: var(--text-color);
+    color: #000;
 }
 
 .card ul {
@@ -449,82 +454,52 @@ header nav ul li a:hover {
     margin-bottom: 10px;
     font-weight: 400;
     font-size: 1rem;
-    color: var(--text-color);
+    color: #000;
 }
-
-.background-text-1st {
-    position: absolute;
-    top: -30%; 
-    left: 39%; 
-    font-family: 'Playfair Display', serif;
-    font-size: 12rem;
-    color: #333;
-    line-height: 0.9;
-    z-index: 1;
-    text-transform: uppercase;
-    pointer-events: none;
-    opacity: 0.1;
-}
-
-.background-text-2nd {
-    position: absolute;
-    top: -30%; 
-    left: -70%;
-    font-family: 'Playfair Display', serif;
-    font-size: 12rem;
-    color: #333;
-    line-height: 0.9;
-    z-index: 1;
-    text-transform: uppercase;
-    pointer-events: none;
-    opacity: 0.1;
-}
-
-.background-text-3rd {
-    position: absolute;
-    top: -30%; 
-    left: 33.5%; 
-    font-family: 'Playfair Display', serif;
-    font-size: 12rem;
-    color: #333;
-    line-height: 0.9;
-    z-index: 1;
-    text-transform: uppercase;
-    pointer-events: none;
-    opacity: 0.1;
-}
-
-.vision .background-text {
-    content: "Vision";
-}
-
-.mission .background-text {
-    content: "Mission";
-}
-
-.innovation .background-text {
-    content: "Innovation";
-}
-
 
 /* Services Section */
 .services {
-    background-color: #f1f1f1;
+    background-color:  transparent;
     padding: 50px 0;
 }
 
 .services h2 {
     text-align: center;
     margin-bottom: 40px;
-    color: var(--text-color);
+    color: #000;
 }
-
+.services p {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #000;
+}
 .service-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
 
+}
+ 
+.hidden {
+    display: none;
+  }
+  
+  .serv-buttons .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .serv-buttons .btn:hover {
+    background-color: #e67e22;
+  }
+  
+  
 .card {
     background-color: var(--card-bg-color);
     border-radius: 10px;
@@ -532,6 +507,7 @@ header nav ul li a:hover {
     text-align: center;
     flex: 1 1 250px;
     margin: 10px;
+    
 }
 
 .card img {
@@ -541,11 +517,11 @@ header nav ul li a:hover {
 
 .card h3 {
     margin-bottom: 10px;
-    color: var(--text-color);
+    color: #000;
 }
 
 .card p {
-    color: var(--text-secondary-color);
+    color: #000);
 }
 
 .serv-buttons {
@@ -575,20 +551,23 @@ header nav ul li a:hover {
 }
 
 /* Upcoming Events Section */
+
 .upcoming-events {
-    background-color: var(--section-bg-color);
-    padding: 50px 0;
+    background-color: transparent;
+    padding: 20px ;
 	display: flex;
     flex-direction: wrap;
     align-items: center;
-
-	
+    width: 95%;
+    margin: 0 auto;	
 }
 
 .upcoming-events h2 {
     text-align: center;
     margin-bottom: 30px;
-    color: var(--text-color);
+    color: #000;
+	margin:0;
+	padding:0;
     font-weight: 700;
 }
 
@@ -596,18 +575,22 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+	margin:0;
+	padding:0;
     gap: 20px;
 }
 
 .event-item {
-    background-color: var(--card-bg-color);
+    background-color: #f8f1f161;
     border-radius: 10px;
     padding: 20px;
     max-width: 400px;
-	    align-items: center;
+	align-items: center;
     text-align: center;
     position: relative; 
     overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
 }
 
 .event-item img {
@@ -620,12 +603,12 @@ header nav ul li a:hover {
 
 .event-item h3 {
     margin-bottom: 10px;
-    color: var(--text-color);
+    color: #000;
     font-weight: 700;
 }
 
 .event-item p {
-    color: var(--text-secondary-color);
+    color: #000;
     margin-bottom: 15px;
 }
 
@@ -642,43 +625,115 @@ header nav ul li a:hover {
 }
 
 .info-section {
-    background-color: #f1f1f1; 
+    background-color: transparent; 
     padding: 50px 20px; 
     text-align: center; 
 }
 
 .info-card {
-    background-color: #ffffff;
+    background-color: #ffffff79;
     border-radius: 10px;
     padding: 30px; 
     max-width: 800px; 
     margin: 0 auto; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .info-card h2 {
-    color: #333333; 
+    color: #000000; 
     font-size: 2em; 
     margin-bottom: 20px; 
 }
 
 .info-card p {
-    color: #555555; 
+    color: #000000; 
     font-size: 1em;
     margin-bottom: 15px; 
     line-height: 1.6; 
+}
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: -5; 
+}
+
+.blob {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle at 50% 50%, rgba(200, 0, 113, 0.8), transparent); 
+    filter: blur(150px);
+    animation: move 10s infinite ease-in-out;
+}
+
+.blob:nth-child(2) {
+    background: radial-gradient(circle at 50% 50%, rgba(0, 204, 204, 0.8), transparent);
+    animation-duration: 12s;
+}
+
+.blob:nth-child(3) {
+    background: radial-gradient(circle at 50% 50%, rgba(0, 204, 0, 0.8), transparent);
+    animation-duration: 15s;
+}
+
+.blob:nth-child(4) {
+    background: radial-gradient(circle at 50% 50%, rgba(204, 204, 0, 0.8), transparent); 
+    animation-duration: 18s;
+}
+
+.blob:nth-child(5) {
+    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 204, 0.8), transparent); 
+    animation-duration: 20s;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0); /* Start position */
+    }
+    50% {
+        transform: translate(calc(500px - 100vw * 0.5), calc(500px - 100vh * 0.5)); 
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.blob:nth-child(1) {
+    top: 20%;
+    left: 10%;
+}
+.blob:nth-child(2) {
+    top: 70%;
+    left: 20%;
+}
+.blob:nth-child(3) {
+    top: 50%;
+    left: 80%;
+}
+.blob:nth-child(4) {
+    top: 30%;
+    left: 60%;
+}
+.blob:nth-child(5) {
+    top: 90%;
+    left: 40%;
 }
 
 
 /* Blog Section Styles */
 .blog {
-    background-color: #1c1c1c; 
+    background-color:transparent; 
     color: #fff;
     padding: 50px 0;
 }
 
 .blog h2 {
     text-align: center;
+    color: #000;
     font-size: 2em;
     margin-bottom: 30px;
 }
@@ -691,7 +746,7 @@ header nav ul li a:hover {
 }
 
 .blog-posts article {
-    background-color: #2d2d2d; 
+    background-color: #d5d5d560; 
     border-radius: 8px;
     overflow: hidden;
     width: calc(33% - 20px);
@@ -732,6 +787,7 @@ header nav ul li a:hover {
     background-color: #1F7BDE; 
 }
 
+
 @media (max-width: 1200px) {
     .blog-posts article {
         width: calc(50% - 20px); 
@@ -744,113 +800,63 @@ header nav ul li a:hover {
     }
 }
 
-/* Carousel Styles */
-.carousel {
-  position: flex;
-  display: grid;
-  gap: 1rem;
-  overflow: hidden;
+.past-collabs {
+    padding: 50px 20px;
+    background: transparent;
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0; 
+}
+
+.past-collabs h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #121212;/
+}
+
+.collab-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px;
+}
+
+.collab-card {
+    background-color: transparent; /
+    border-radius: 8px;
+    overflow: hidden;
+    width: 20vw;
+    border: 1px solid #f6f6f600; 
+}
+
+.collab-card img {
+    width: 10dvw;
+    height: 10dvw;
+    display: block;
     align-items: center;
-  padding: 1rem;
-  width: 80%;
-  margin: auto;
 }
 
-.carousel__viewport {
-  display: flex;
-  position:center;
-  gap: 1rem;
-  overflow-x: auto;
+.collab-info {
+    padding: 20px;
 }
 
-.carousel__slide {
-  scroll-snap-align: center;
-  flex: 0 0 100%;
-  position: relative;
+.collab-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #121212; /* Dark text color */
 }
 
-.carousel__snapper {
-  position: relative;
-  padding: 2rem;
-  
+.collab-info p {
+    font-size: 1em;
+    line-height: 1.4;
+    color: #333333; /* Dark grey for description text */
 }
 
-.carousel__prev,.carousel__next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 0.5rem;
-  background-color: #333;
-  color: white;
-  text-decoration: none;
-  border-radius: 50%;
-  z-index: 2;
-}
-
-.carousel__prev {
-  left: 1rem;
-}
-
-.carousel__next {
-  right: 1rem;
-}
-
-.carousel__navigation {
-  position: absolute;
-  bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 0.5rem;
-}
-
-.carousel__navigation-list {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.carousel__navigation-item {
-  list-style: none;
-}
-
-.carousel__navigation-button {
-  display: block;
-  width: 1rem;
-  height: 1rem;
-  background-color: #333;
-  border-radius: 50%;
-  text-indent: -9999px;
-}
-
-.review-item {
-  text-align: center;
-}
-
-.review-item blockquote {
-  font-style: italic;
-  color: #555;
-  margin: 1rem 0;
-}
-
-.review-item p strong {
-  display: block;
-  margin-top: 0.5rem;
-  color: #333;
-}
-
-.carousel h2 {
-  text-align: center;
-  margin-bottom: 1rem;
-  color: var(--text-color);
-}
-
-/* Team Section */
-.team-card {
+.mission-card{
     position: relative;
-    background-color: #f7f7f7;
+    background-color: transparent;
     height: 300px;
     width: 350px;
-    border-radius: 1px;
+    border-radius: 20px;
     overflow: hidden;
     transition: transform 0.4s;
     flex: 1 1 200px;
@@ -858,69 +864,69 @@ header nav ul li a:hover {
     text-align: center;
 }
 
-.team-card img {
+.mission-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s, opacity 0.3s;
+}
+.vision-card{
+    position: relative;
+    background-color: transparent;
+    height: 300px;
+    width: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.4s;
+    flex: 1 1 200px;
+    margin: 0px; 
+    text-align: center;
+}
+
+.vision-card img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s, opacity 0.3s;
 }
 
-.team-card-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #333;
-    font-size: 16px;
-    opacity: 0;
-    transition: opacity 0.3s;
-    z-index: 2;
+.vation-card{
+    position: relative;
+    background-color: transparent;
+    height: 300px;
+    width: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.4s;
+    flex: 1 1 200px;
+    margin: 0px; 
+    text-align: center;
 }
 
-.team-card-icons {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: space-around;
-    width: 60%;
-    z-index: 2;
-    opacity: 0;
-    transition: opacity 0.3s;
+.vation-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s, opacity 0.3s;
 }
 
-.team-card-icons i {
-    color: #333;
-    font-size: 20px;
-}
-
-.team-card:hover .team-card-text,
-.team-card:hover .team-card-icons {
-    opacity: 1;
-}
-
-.team-card:hover img {
-    opacity: 0.3;
-    transform: scale(1.1);
-}
 
 /* About Section */
 .about {
-    background-color: #000000;
+    background-color: transparent;
     padding: 50px 0;
 }
 
 .about h2 {
     text-align: center;
     margin-bottom: 30px;
-    color: #f7f7f7;
+    color: #000;
 }
 
 .about p {
     text-align: center;
     margin-bottom: 30px;
-    color: #f7f7f7;
+    color: #000;
 }
 
 .about .team {
@@ -931,18 +937,20 @@ header nav ul li a:hover {
 
 /* Contact Section */
 .contact {
-    background-color: var(--section-bg-color);
+    background-color: transparent;
     padding: 50px 0;
 }
 
 .contact h2 {
     text-align: center;
     margin-bottom: 30px;
-    color: var(--text-color);
+    color: #000;
 }
 
+
+
 .contact form {
-    max-width: 600px;
+    max-width: 540px;
     margin: 0 auto;
 }
 
@@ -953,15 +961,15 @@ header nav ul li a:hover {
 .contact label {
     display: block;
     margin-bottom: 5px;
-    color: var(--text-color);
+    color: #000;
 }
 
 .contact input, .contact textarea {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    color: var(--text-color);
+    color: #000;
     background-color: var(--input-bg-color);
 }
 
@@ -982,19 +990,19 @@ header nav ul li a:hover {
 
 /* Community Section */
 .community {
-    background-color: var(--section-bg-color);
+    background-color:transparent;
     padding: 50px 0;
     text-align: center;
 }
 
 .community h2 {
     margin-bottom: 20px;
-    color: var(--text-color);
+    color: #000;
 }
 
 .community p {
     margin-bottom: 30px;
-    color: var(--text-secondary-color);
+    color: #000);
 }
 
 .community .btn-primary {
@@ -1015,7 +1023,7 @@ header nav ul li a:hover {
 
 .social-media .social-icon {
     margin: 0 10px;
-    color: var(--text-color);
+    color: #000;
     text-decoration: none;
 }
 
@@ -1029,7 +1037,7 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
-    background-color: #000; 
+    background-color: #181818; 
     color: #fff; 
 }
 
@@ -1051,14 +1059,14 @@ footer {
 
 /* Light and Dark Theme Variables */
 :root {
-    --bg-color: #f7f7f7f;
-    --text-color: #333;
-    --text-secondary-color: #777;
+    --bg-color: transparent;
+    --text-color: #000000;
+    --text-secondary-color: #0c0c0c;
     --header-bg-color: #333;
     --header-text-color: #fff;
     --header-hover-bg-color: #575757;
     --section-bg-color: #fff;
-    --card-bg-color: #f9f9f9;
+    --card-bg-color: transparent;
     --input-bg-color: #fff;
 }
 
@@ -1069,7 +1077,7 @@ footer {
 }
 
 @media (max-width: 1024px) {
-    body {
+    .body {
         font-size: 0.9rem; 
     }
 
@@ -1087,16 +1095,16 @@ footer {
         font-size: 1.5vw; 
     }
 
-    .vision h2, .mission h2, .innovation h2 {
+    .vision h2, .mission h2,  {
         font-size: 1.8rem; 
     }
 
-    .vision-cards, .mission-cards, .innovation-cards {
+    .vision-cards, .mission-cards, .vation-cards {
         flex-direction: column;
         gap: 10px;
     }
 
-    .vision-img, .mission-img, .innovation-img {
+    .vision-img, .mission-img, .vation-img {
         width: 80px;
         margin: 0 auto 10px;
     }
@@ -1105,13 +1113,7 @@ footer {
         width: 100%; 
     }
 
-    .carousel {
-        width: 100%;
-    }
 
-    .carousel__viewport {
-        overflow-x: auto; 
-    }
 
     .card h2 {
         font-size: 1.8rem;
@@ -1128,4 +1130,13 @@ footer {
     .event-item p {
         font-size: 1rem; 
     }
+} .normal {
+            font-weight: 400; 
+        }
+
+        .bold {
+            font-weight: 900; 
 }
+        .light {
+            font-weight: 300;
+            

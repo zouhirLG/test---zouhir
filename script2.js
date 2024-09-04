@@ -112,3 +112,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
   loadTrack(currentTrackIndex);
 });
+let timeout;
+const musicPlayer = document.querySelector('.music-player');
+
+function showMusicPlayer() {
+    musicPlayer.classList.remove('hidden');
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+        musicPlayer.classList.add('hidden');
+    }, 5000); // Hide after 5 seconds of inactivity
+}
+
+document.addEventListener('scroll', showMusicPlayer);
+document.addEventListener('mousemove', showMusicPlayer);
+document.addEventListener('keydown', showMusicPlayer);
+
+// Initial hide after a few seconds
+timeout = setTimeout(() => {
+    musicPlayer.classList.add('hidden');
+}, 5000);
